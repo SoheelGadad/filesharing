@@ -3,5 +3,5 @@ Simple file sharing web app with drag and drop file upload
 
 
 
-### Backend NodeJS codes can be found on @codersgyan Github
+### Backend NodeJS codes can be found on  Github
 
