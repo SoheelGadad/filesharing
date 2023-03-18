@@ -19,7 +19,7 @@ const baseURL = "https://clienttest.onrender.com";
 const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
 
-const maxAllowedSize = 100 * 1024 * 1024; //100mb
+const maxAllowedSize =  500 * 1024 * 1024 * 1024; //500gp
 
 browseBtn.addEventListener("click", () => {
   fileInput.click();
@@ -34,7 +34,7 @@ dropZone.addEventListener("drop", (e) => {
       fileInput.files = files;
       uploadFile();
     } else {
-      showToast("Max file size is 100MB");
+      showToast("Max file size is 500gp");
     }
   } else if (files.length > 1) {
     showToast("You can't upload multiple files");
@@ -58,7 +58,7 @@ dropZone.addEventListener("dragleave", (e) => {
 // file input change and uploader
 fileInput.addEventListener("change", () => {
   if (fileInput.files[0].size > maxAllowedSize) {
-    showToast("Max file size is 100MB");
+    showToast("Max file size is 500gp");
     fileInput.value = ""; // reset the input
     return;
   }
