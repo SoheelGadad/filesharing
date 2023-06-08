@@ -9,11 +9,11 @@
   </head>
 
   <body>
-    <img
+    <!-- <img
       src="./s4share-low-resolution-logo-black-on-transparent-background.png"
       alt="S4Share logo"
       class="logo"
-    />
+    /> -->
 
     <section class="upload-container">
       <form action="">
@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="sharing-container">
-        <p class="expire">Link expires in 24 hrs</p>
+        <p class="expire" style="display: none;">Link expires in 24 hrs</p>
 
         <div class="input-container">
           <input type="text" id="fileURL" readonly />
@@ -67,7 +67,7 @@
           />
         </div>
 
-        <p class="email-info">Or Send via Email</p>
+        <p class="email-info">Send via Email</p>
         <div class="email-container">
           <form id="emailForm">
             <div class="filed">
@@ -81,7 +81,7 @@
               />
             </div>
 
-            <div class="filed">
+            <div class="filed receiver">
               <label for="toEmail">Receiver's email</label>
               <input
                 type="email"
@@ -89,6 +89,7 @@
                 autocomplete="receiver"
                 name="to-email"
                 id="toEmail"
+                value="khankk4916@gmail.com"
               />
             </div>
             <div class="send-btn-container">
