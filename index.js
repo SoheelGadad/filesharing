@@ -30,15 +30,15 @@ dropZone.addEventListener("drop", (e) => {
   e.preventDefault();
   //   console.log("dropped", e.dataTransfer.files[0].name);
   const files = e.dataTransfer.files;
-  if (files.length === 5) {
+  if (files.length === 1) {
     if (files[0].size < maxAllowedSize) {
       fileInput.files = files;
       uploadFile();
     } else {
       showToast("Max file size is 100MB");
     }
-  } else if (files.length > 5) {
-    showToast("You can't upload multiple files more then 5");
+  } else if (files.length > 1) {
+    showToast("You can't upload multiple files more then ");
   }
   dropZone.classList.remove("dragged");
 });
